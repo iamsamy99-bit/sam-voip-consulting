@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iamsamy99-bit.github.io/sam-voip-consulting/sitemap.xml
