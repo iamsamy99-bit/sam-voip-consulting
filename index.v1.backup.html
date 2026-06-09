@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sam Garcia — Bilingual VoIP & Network Consultant | Remote Troubleshooting, AI Phone Agents</title>
+<meta name="description" content="Bilingual (EN/ES) VoIP and network consultant based in Guadalajara, Mexico. Remote troubleshooting for business phone systems, SIP/RTP diagnostics, AI voice agents for small businesses, and Mac hardware upgrades. Same-day response.">
+<meta name="keywords" content="VoIP consultant, bilingual VoIP support, SIP troubleshooting, network consultant Guadalajara, remote VoIP troubleshooting, AI phone agent, business phone system support, soporte VoIP Guadalajara">
+<meta name="author" content="Sam Garcia">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://iamsamy99-bit.github.io/sam-voip-consulting/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iamsamy99-bit.github.io/sam-voip-consulting/">
+<meta property="og:title" content="Sam Garcia — Bilingual VoIP & Network Consultant">
+<meta property="og:description" content="Remote VoIP/network troubleshooting, AI voice agents, and Mac hardware work. English & Spanish. Based in Guadalajara, serving clients worldwide.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_MX">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sam Garcia — Bilingual VoIP & Network Consultant">
+<meta name="twitter:description" content="Remote VoIP/network troubleshooting, AI voice agents for small businesses. EN/ES.">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Sam Garcia — VoIP & Network Consulting",
+  "description": "Bilingual remote VoIP and network troubleshooting, AI voice agent setup for small businesses, and Mac hardware upgrades.",
+  "url": "https://iamsamy99-bit.github.io/sam-voip-consulting/",
+  "email": "iasamy99@gmail.com",
+  "areaServed": [
+    {"@type": "Country", "name": "United States"},
+    {"@type": "Country", "name": "Mexico"},
+    {"@type": "City", "name": "Guadalajara"}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Guadalajara",
+    "addressRegion": "Jalisco",
+    "addressCountry": "MX"
+  },
+  "knowsLanguage": ["en", "es"],
+  "founder": {
+    "@type": "Person",
+    "name": "Sam Garcia",
+    "jobTitle": "VoIP & Network Consultant"
+  },
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Remote VoIP & SIP troubleshooting"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Network diagnostics and QoS tuning"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI voice agent setup for small businesses"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mac hardware upgrades and firmware work"}}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --porcelain:#EDF1F4;
+  --card:#FFFFFF;
+  --ink:#0F2236;
+  --ink-soft:#3D5469;
+  --line:#CBD6DF;
+  --op-green:#0E9F6E;
+  --op-green-dim:#E0F3EB;
+  --copper:#C2671B;
+  --copper-dim:#F7E9DC;
+  --console-bg:#0F2236;
+  --console-text:#D7E3ED;
+  --radius:10px;
+  --maxw:1080px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'IBM Plex Sans',system-ui,sans-serif;
+  background:var(--porcelain);
+  color:var(--ink);
+  line-height:1.6;
+  font-size:17px;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+a{color:var(--ink)}
+::selection{background:var(--op-green);color:#fff}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(237,241,244,.88);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Archivo',sans-serif;font-weight:800;font-stretch:115%;letter-spacing:-.01em;font-size:1.05rem;text-decoration:none;display:flex;align-items:center;gap:9px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--op-green);box-shadow:0 0 0 3px var(--op-green-dim);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 3px var(--op-green-dim)}50%{box-shadow:0 0 0 6px rgba(14,159,110,.12)}}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{text-decoration:none;font-size:.92rem;color:var(--ink-soft)}
+.nav-links a:hover{color:var(--ink)}
+.lang-toggle{
+  font-family:'IBM Plex Mono',monospace;font-size:.78rem;
+  border:1px solid var(--line);border-radius:6px;background:var(--card);
+  padding:5px 10px;cursor:pointer;color:var(--ink);
+}
+.lang-toggle:hover{border-color:var(--ink-soft)}
+
+/* ---------- hero ---------- */
+.hero{padding:72px 0 64px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--op-green);display:flex;align-items:center;gap:8px;margin-bottom:18px;
+}
+h1{
+  font-family:'Archivo',sans-serif;font-weight:850;font-stretch:118%;
+  font-size:clamp(2.1rem,4.4vw,3.2rem);line-height:1.06;letter-spacing:-.02em;margin-bottom:20px;
+}
+h1 .accent{color:var(--op-green)}
+.hero p.lede{color:var(--ink-soft);font-size:1.08rem;max-width:46ch;margin-bottom:30px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:600;font-size:.95rem;
+  padding:13px 24px;border-radius:8px;transition:transform .12s ease;
+}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--ink);color:#fff}
+.btn-primary:hover{background:#1A3450}
+.btn-ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card)}
+.btn-ghost:hover{border-color:var(--ink-soft)}
+.hero-meta{margin-top:26px;font-family:'IBM Plex Mono',monospace;font-size:.76rem;color:var(--ink-soft);display:flex;gap:18px;flex-wrap:wrap}
+.hero-meta span::before{content:"▸ ";color:var(--op-green)}
+
+/* console — signature element */
+.console{
+  background:var(--console-bg);border-radius:var(--radius);
+  box-shadow:0 18px 50px rgba(15,34,54,.22);
+  overflow:hidden;font-family:'IBM Plex Mono',monospace;font-size:.8rem;
+}
+.console-bar{display:flex;align-items:center;gap:8px;padding:11px 16px;border-bottom:1px solid rgba(255,255,255,.09)}
+.console-bar .cdot{width:10px;height:10px;border-radius:50%;background:#33506B}
+.console-bar .title{margin-left:auto;color:#7B93A8;font-size:.72rem}
+.console-body{padding:18px 18px 22px;color:var(--console-text);min-height:248px}
+.console-body .line{opacity:0;display:block;white-space:pre-wrap;animation:reveal .25s ease forwards}
+.console-body .t{color:#5E7C96}
+.console-body .ok{color:#3DDC97;font-weight:500}
+.console-body .warn{color:#F0A35E}
+.console-body .final{color:#fff;font-weight:500;margin-top:10px;display:block}
+@keyframes reveal{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .console-body .line{animation:none;opacity:1}
+  .dot{animation:none}
+}
+
+/* ---------- sections ---------- */
+section{padding:64px 0}
+.sec-head{margin-bottom:38px;max-width:60ch}
+.sec-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--copper);margin-bottom:10px}
+h2{font-family:'Archivo',sans-serif;font-weight:800;font-stretch:112%;font-size:clamp(1.5rem,2.8vw,2rem);letter-spacing:-.015em;margin-bottom:10px}
+.sec-head p{color:var(--ink-soft)}
+
+/* services as monitoring entries */
+.svc-list{display:flex;flex-direction:column;gap:14px}
+.svc{
+  display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:start;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 24px;transition:border-color .15s;
+}
+.svc:hover{border-color:var(--op-green)}
+.svc .sdot{width:10px;height:10px;border-radius:50%;background:var(--op-green);margin-top:8px;flex-shrink:0}
+.svc h3{font-family:'Archivo',sans-serif;font-weight:700;font-size:1.05rem;margin-bottom:5px}
+.svc p{color:var(--ink-soft);font-size:.94rem;max-width:62ch}
+.svc .tag{
+  font-family:'IBM Plex Mono',monospace;font-size:.72rem;white-space:nowrap;
+  background:var(--op-green-dim);color:var(--op-green);border-radius:6px;padding:5px 10px;font-weight:500;
+}
+.svc .tag.local{background:var(--copper-dim);color:var(--copper)}
+
+/* case study */
+.case{
+  background:var(--card);border:1px solid var(--line);border-left:4px solid var(--op-green);
+  border-radius:var(--radius);padding:30px 32px;
+}
+.case .label{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--op-green);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.case h3{font-family:'Archivo',sans-serif;font-weight:750;font-size:1.25rem;margin-bottom:12px}
+.case p{color:var(--ink-soft);max-width:68ch}
+.case .stats{display:flex;gap:34px;margin-top:22px;flex-wrap:wrap}
+.case .stat b{font-family:'Archivo',sans-serif;font-size:1.3rem;font-weight:800;display:block}
+.case .stat span{font-family:'IBM Plex Mono',monospace;font-size:.7rem;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.08em}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.about-grid p{color:var(--ink-soft);margin-bottom:14px}
+.cred{font-family:'IBM Plex Mono',monospace;font-size:.8rem;line-height:2;color:var(--ink)}
+.cred li{list-style:none}
+.cred li::before{content:"[ok] ";color:var(--op-green);font-weight:500}
+
+/* contact */
+.contact{
+  background:var(--console-bg);color:var(--console-text);
+  border-radius:var(--radius);padding:52px 48px;text-align:center;
+}
+.contact h2{color:#fff}
+.contact p{color:#9FB4C6;max-width:52ch;margin:0 auto 28px}
+.contact .btn-primary{background:var(--op-green)}
+.contact .btn-primary:hover{background:#0C8A60}
+.contact .email{font-family:'IBM Plex Mono',monospace;font-size:.85rem;margin-top:18px;display:block;color:#7B93A8}
+.contact .email a{color:#3DDC97;text-decoration:none}
+
+footer{padding:36px 0 48px;color:var(--ink-soft);font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer .mono{font-family:'IBM Plex Mono',monospace;font-size:.72rem}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;padding:48px 0 40px}
+  .about-grid{grid-template-columns:1fr}
+  .svc{grid-template-columns:auto 1fr}
+  .svc .tag{grid-column:2;justify-self:start}
+  .nav-links a:not(.lang-toggle){display:none}
+  .contact{padding:40px 24px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span>sam.garcia<span style="color:var(--op-green)">_</span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#case" data-i18n="nav_case">Case study</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+      <button class="lang-toggle" id="langBtn" aria-label="Cambiar a español">ES</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<div class="wrap hero">
+  <div>
+    <div class="eyebrow"><span class="dot" aria-hidden="true"></span><span data-i18n="hero_eyebrow">Available for remote engagements · GDL, MX (UTC-6)</span></div>
+    <h1 data-i18n-html="hero_h1">Your phones go down.<br>I bring them <span class="accent">back online.</span></h1>
+    <p class="lede" data-i18n="hero_lede">Bilingual VoIP &amp; network consultant. I diagnose SIP, RTP, QoS and firewall issues that generic IT can't see — remotely, in English or Spanish, usually same day. I also build AI voice agents that answer your business line 24/7.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="mailto:iasamy99@gmail.com?subject=Consulting%20inquiry" data-i18n="cta_main">Book a free 15-min diagnostic call</a>
+      <a class="btn btn-ghost" href="#services" data-i18n="cta_sec">See services</a>
+    </div>
+    <div class="hero-meta">
+      <span data-i18n="meta1">5+ yrs business VoIP platforms</span>
+      <span data-i18n="meta2">EN / ES native fluency</span>
+      <span data-i18n="meta3">Remote-first, worldwide</span>
+    </div>
+  </div>
+
+  <!-- signature: SIP trace console -->
+  <div class="console" role="img" aria-label="Animated SIP trace showing a phone outage being diagnosed and resolved">
+    <div class="console-bar">
+      <span class="cdot"></span><span class="cdot"></span><span class="cdot"></span>
+      <span class="title">sip-trace · client-pbx.local</span>
+    </div>
+    <div class="console-body" id="trace"></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow" data-i18n="svc_eyebrow">Service catalog</div>
+      <h2 data-i18n="svc_h2">What I fix and build</h2>
+      <p data-i18n="svc_p">Flat-rate diagnostics, hourly deep work, or fixed-scope projects. You always get a written summary of what was wrong and what I changed.</p>
+    </div>
+    <div class="svc-list">
+      <article class="svc">
+        <span class="sdot" aria-hidden="true"></span>
+        <div>
+          <h3 data-i18n="s1_h">Remote VoIP &amp; SIP troubleshooting</h3>
+          <p data-i18n="s1_p">Dropped calls, one-way audio, registration failures, echo, jitter. I read the SIP/RTP traces, find the real cause — NAT, SDP, codec mismatch, SBC config — and fix it or hand your provider an exact ticket they can't deflect.</p>
+        </div>
+        <span class="tag">$60 USD/hr · remote</span>
+      </article>
+      <article class="svc">
+        <span class="sdot" aria-hidden="true"></span>
+        <div>
+          <h3 data-i18n="s2_h">Network diagnostics &amp; QoS tuning</h3>
+          <p data-i18n="s2_p">Slow office network, Wi-Fi dead zones, VPN issues, voice traffic competing with video. Audit, prioritization rules, and a clean config you can keep.</p>
+        </div>
+        <span class="tag">$60 USD/hr · remote</span>
+      </article>
+      <article class="svc">
+        <span class="sdot" aria-hidden="true"></span>
+        <div>
+          <h3 data-i18n="s3_h">AI voice agent for your business line</h3>
+          <p data-i18n="s3_p">A natural-sounding AI answers calls, takes orders, and messages you — in Spanish, English, or both. Already running in production for a retail business in Guadalajara. Fixed-scope setup plus optional monthly care.</p>
+        </div>
+        <span class="tag" data-i18n="s3_tag">from $450 USD · fixed</span>
+      </article>
+      <article class="svc">
+        <span class="sdot" aria-hidden="true"></span>
+        <div>
+          <h3 data-i18n="s4_h">Mac hardware upgrades &amp; firmware</h3>
+          <p data-i18n="s4_p">Mac Pro and older Mac revival: GPU upgrades and flashing, dual-boot setups, storage and RAM. Bring dead hardware back to useful life instead of buying new.</p>
+        </div>
+        <span class="tag local" data-i18n="s4_tag">quote · Guadalajara area</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CASE -->
+<section id="case">
+  <div class="wrap">
+    <div class="case">
+      <div class="label" data-i18n="case_label">Case study · in production</div>
+      <h3 data-i18n="case_h">A grocery store that never misses a call</h3>
+      <p data-i18n="case_p">A small grocery business in Guadalajara was losing orders every time the owner was busy at the counter. I deployed an AI voice agent on their line that greets customers in natural Spanish, takes orders and questions, and forwards a summary instantly. It has answered every call since launch — nights and Sundays included — with zero added staff.</p>
+      <div class="stats">
+        <div class="stat"><b>24/7</b><span data-i18n="stat1">line coverage</span></div>
+        <div class="stat"><b>0</b><span data-i18n="stat2">missed calls since launch</span></div>
+        <div class="stat"><b>ES</b><span data-i18n="stat3">natural-language voice</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow" data-i18n="ab_eyebrow">Who you're hiring</div>
+      <h2 data-i18n="ab_h2">Sam Garcia</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p data-i18n="ab_p1">I spend my days inside business phone systems — reading traces, untangling NAT and firewall problems, and explaining the fix in plain language. Five-plus years on carrier-grade VoIP platforms means I've already seen the failure mode you're dealing with.</p>
+        <p data-i18n="ab_p2">I work in English and Spanish at native level, which matters when your provider, your ISP and your staff don't speak the same one. Based in Guadalajara (UTC-6), aligned with US business hours.</p>
+      </div>
+      <ul class="cred">
+        <li data-i18n="c1">SIP / RTP / SDP trace analysis</li>
+        <li data-i18n="c2">QoS, NAT traversal, firewall rules</li>
+        <li data-i18n="c3">DNS, SRV records, failover design</li>
+        <li data-i18n="c4">AI voice agents (production experience)</li>
+        <li data-i18n="c5">APIs, automation, scripting</li>
+        <li data-i18n="c6">Mac hardware &amp; firmware work</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <h2 data-i18n="ct_h2">Start with a free 15-minute diagnostic</h2>
+      <p data-i18n="ct_p">Tell me what's failing. I'll tell you whether I can fix it, how long it should take, and what it costs — before you commit to anything.</p>
+      <a class="btn btn-primary" href="mailto:iasamy99@gmail.com?subject=Diagnostic%20call%20request&body=Hi%20Sam%2C%0A%0AWhat's%20failing%3A%20%0AMy%20phone%20system%2Fprovider%3A%20%0ABest%20time%20to%20talk%3A%20" data-i18n="ct_btn">Email me — I reply same day</a>
+      <span class="email">→ <a href="mailto:iasamy99@gmail.com">iasamy99@gmail.com</a></span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <span>© <span id="yr"></span> Sam Garcia · Guadalajara, MX</span>
+  <span class="mono">status: <span style="color:var(--op-green)">● operational</span> · EN/ES</span>
+</footer>
+
+<script>
+/* ---- SIP trace animation (signature) ---- */
+const traceLines = [
+  ['<span class="t">14:02:11.402</span>  → INVITE sip:client@pbx.local SIP/2.0',0],
+  ['<span class="t">14:02:11.640</span>  ← 100 Trying',400],
+  ['<span class="t">14:02:14.991</span>  ← <span class="warn">408 Request Timeout</span>',900],
+  ['<span class="t">14:02:15.010</span>  diag: NAT keep-alive missing on WAN edge',1600],
+  ['<span class="t">14:02:15.012</span>  fix : re-register · port 5060→5061 TLS',2300],
+  ['<span class="t">14:02:16.118</span>  → INVITE sip:client@pbx.local SIP/2.0',3100],
+  ['<span class="t">14:02:16.301</span>  ← 100 Trying',3500],
+  ['<span class="t">14:02:16.455</span>  ← 180 Ringing',3900],
+  ['<span class="t">14:02:17.020</span>  ← <span class="ok">200 OK — media flowing</span>',4400],
+  ['<span class="final">✓ Your phones are back online.</span>',5200],
+];
+const traceEl = document.getElementById('trace');
+const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+traceLines.forEach(([html, delay]) => {
+  const span = document.createElement('span');
+  span.className = 'line';
+  span.innerHTML = html;
+  if (reduced) { span.style.animation='none'; span.style.opacity='1'; traceEl.appendChild(span); }
+  else setTimeout(()=>traceEl.appendChild(span), delay);
+});
+
+/* ---- year ---- */
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* ---- EN/ES toggle ---- */
+const es = {
+  nav_services:'Servicios', nav_case:'Caso real', nav_about:'Acerca de', nav_contact:'Contacto',
+  hero_eyebrow:'Disponible para proyectos remotos · GDL, MX (UTC-6)',
+  hero_h1:'Tus teléfonos fallan.<br>Yo los pongo <span class="accent">en línea otra vez.</span>',
+  hero_lede:'Consultor bilingüe de VoIP y redes. Diagnostico problemas de SIP, RTP, QoS y firewall que el soporte genérico no ve — de forma remota, en español o inglés, normalmente el mismo día. También construyo agentes de voz con IA que contestan tu línea 24/7.',
+  cta_main:'Agenda un diagnóstico gratis de 15 min', cta_sec:'Ver servicios',
+  meta1:'5+ años en plataformas VoIP empresariales', meta2:'Español / Inglés nativo', meta3:'Remoto, a todo el mundo',
+  svc_eyebrow:'Catálogo de servicios', svc_h2:'Lo que arreglo y construyo',
+  svc_p:'Diagnóstico a tarifa fija, trabajo por hora o proyectos de alcance cerrado. Siempre recibes un resumen escrito de qué fallaba y qué cambié.',
+  s1_h:'Soporte remoto VoIP y SIP', s1_p:'Llamadas caídas, audio en un solo sentido, fallas de registro, eco, jitter. Leo las trazas SIP/RTP, encuentro la causa real — NAT, SDP, códecs, SBC — y lo arreglo o le entrego a tu proveedor un ticket exacto que no pueden rebotar.',
+  s2_h:'Diagnóstico de red y QoS', s2_p:'Red lenta en la oficina, zonas muertas de Wi-Fi, problemas de VPN, voz compitiendo con video. Auditoría, reglas de priorización y una configuración limpia que te quedas.',
+  s3_h:'Agente de voz con IA para tu negocio', s3_p:'Una IA con voz natural contesta llamadas, toma pedidos y te avisa — en español, inglés o ambos. Ya funciona en producción para un negocio en Guadalajara. Instalación de alcance fijo con mantenimiento mensual opcional.',
+  s3_tag:'desde $8,000 MXN · fijo', s4_h:'Upgrades de hardware Mac y firmware',
+  s4_p:'Revivir Mac Pro y Macs antiguas: upgrade y flasheo de GPU, dual-boot, almacenamiento y RAM. Recupera hardware muerto en lugar de comprar nuevo.',
+  s4_tag:'cotización · zona Guadalajara',
+  case_label:'Caso real · en producción', case_h:'Un abarrotes que nunca pierde una llamada',
+  case_p:'Un pequeño negocio de abarrotes en Guadalajara perdía pedidos cada vez que el dueño estaba ocupado en el mostrador. Instalé un agente de voz con IA en su línea que saluda en español natural, toma pedidos y preguntas, y reenvía un resumen al instante. Ha contestado todas las llamadas desde el lanzamiento — noches y domingos incluidos — sin contratar a nadie.',
+  stat1:'cobertura de línea', stat2:'llamadas perdidas desde el inicio', stat3:'voz en lenguaje natural',
+  ab_eyebrow:'A quién contratas', ab_h2:'Sam Garcia',
+  ab_p1:'Paso mis días dentro de sistemas telefónicos empresariales — leyendo trazas, desenredando problemas de NAT y firewall, y explicando la solución en lenguaje claro. Más de cinco años en plataformas VoIP de nivel carrier significan que ya vi la falla que estás sufriendo.',
+  ab_p2:'Trabajo en español e inglés a nivel nativo, lo cual importa cuando tu proveedor, tu ISP y tu equipo no hablan el mismo idioma. Basado en Guadalajara (UTC-6), alineado con horario de oficina de EE.UU.',
+  c1:'Análisis de trazas SIP / RTP / SDP', c2:'QoS, NAT traversal, reglas de firewall',
+  c3:'DNS, registros SRV, diseño de failover', c4:'Agentes de voz IA (experiencia en producción)',
+  c5:'APIs, automatización, scripting', c6:'Hardware Mac y firmware',
+  ct_h2:'Empieza con un diagnóstico gratis de 15 minutos',
+  ct_p:'Cuéntame qué está fallando. Te digo si lo puedo arreglar, cuánto tarda y cuánto cuesta — antes de que te comprometas a nada.',
+  ct_btn:'Escríbeme — respondo el mismo día',
+};
+const enCache = {};
+let lang = 'en';
+const btn = document.getElementById('langBtn');
+btn.addEventListener('click', () => {
+  lang = lang === 'en' ? 'es' : 'en';
+  document.documentElement.lang = lang === 'es' ? 'es-MX' : 'en';
+  btn.textContent = lang === 'en' ? 'ES' : 'EN';
+  btn.setAttribute('aria-label', lang === 'en' ? 'Cambiar a español' : 'Switch to English');
+  document.querySelectorAll('[data-i18n],[data-i18n-html]').forEach(el => {
+    const key = el.dataset.i18n || el.dataset.i18nHtml;
+    const isHtml = 'i18nHtml' in el.dataset;
+    if (!(key in enCache)) enCache[key] = isHtml ? el.innerHTML : el.textContent;
+    const val = lang === 'es' ? es[key] : enCache[key];
+    if (val !== undefined) { if (isHtml || lang==='es' && /</.test(val)) el.innerHTML = val; else el.textContent = val; }
+  });
+});
+</script>
+</body>
+</html>
